@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-image:url(https://png.pngtree.com/background/20250111/original/pngtree-background-of-monitor-computer-with-online-game-streaming-desktop-picture-image_15517931.jpg) ;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        </style>
+        <title>Q3 Seatwork 2</title>
+    </head>
+    <body>
+ <body>
+       <h2>Cellphone Price Checker</h2>
+       <input type="number" id="price" placeholder="Enter price">
+       <button onclick="checkPrice()">Check Phones</button>
+      <div id="result"></div>
+     <script>
+       function checkPrice() {
+         const price = document.getElementById("price").value;
+         const result = document.getElementById("result");
+         if (price < 50000) {
+           result.innerHTML = `
+             Super Duper L Phones:<br>
+             Iphone 1<br>
+             Xiomai Phone<br>
+             Samsung A series
+           `;
+         } else {
+           result.innerHTML = `
+             Super Expensive Phones:<br>
+             IPhone 21 Pro max m<br>
+             Samsung Galaxy Z29<br>
+             Xiomai Tri Fold Phone
+           `;
+         }
+       }
+     </script>
+</body>
+<style>
+body {
+   background-image: url("https://png.pngtree.com/background/20250111/original/pngtree-background-of-monitor-computer-with-online-game-streaming-desktop-picture-image_15517931.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+ }
+ </style>
+   </head>
+   <body>
+       <h2>Find any Discounts?</h2>
+       <input type="number" id="price2" placeholder="enter price2">
+       <button onclick="calculateDiscount()">Get Discount</button>
+       <div id="result2"></div>
+     <script>
+       function calculateDiscount() {
+         const price2 = document.getElementById("price2").value;
+         const discount = price2 * 0.20;
+         const finalPrice2 = price2 - discount;
+         document.getElementById("result2").innerHTML = `
+           Original Price: ₱${price2}<br>
+           Fake Discount (20%): ₱${discount.toFixed(2)}<br>
+           <span style="color:red;">
+             Discounted Price: ₱${finalPrice2.toFixed(2)}
+           </span>
+         `;
+       }
+     </script>
+</style>
+
+</html>
+
